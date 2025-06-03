@@ -54,8 +54,14 @@ jobs:
         run: |
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
+      - name: Pre-download upload-artifact (fix for missing download info)
+        uses: actions/upload-artifact@v3
+        with:
+            name: dummy
+            path: README.md
+  
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v0
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
