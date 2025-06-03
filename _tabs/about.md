@@ -14,21 +14,43 @@ order: 4
 
 bundle exec jekyll s
 
-## 与git上的仓库同步笔记
 
-1、在github上创建项目
+## git使用笔记
 
-2、使用git clone https://github.com/xxxxxxx/xxxxx.git 克隆到本地
+1、克隆仓库：
 
-3、编辑项目【增、删、改】
+```
+git clone https://github.com/你的用户名/项目名.git
+```
+
+2、创建分支：
+
+```
+git checkout -b master // 基于主分支创建新分支
+```
+
+3、提交并推送分支：
+
+```
+git add . // 将改动添加到暂存区，.代表全部文件
+git commit -m "添加新功能"
+git push origin master// 将本地更改推送到远程master分支。
+```
+
+其它操作：
+
+
+```
 git status   ## 查看修改的状态
 git diff .   ## 查看修改的具体不同
 
-4、git add . （将改动添加到暂存区，.代表全部文件）
+git remote -v
+git remote：查看当前 Git 仓库关联的远程仓库名称。
+-v（verbose）：显示详细信息，包括每个远程仓库的 URL 和用途（fetch 或 push）。
+```
 
-5、git commit -m "提交说明"
 
-6、git push origin master  将本地更改推送到远程master分支。
+
 
 ## 文件状态说明
 
