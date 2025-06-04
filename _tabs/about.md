@@ -10,8 +10,6 @@ order: 4
 
 详细说明在：[https://chirpy.cotes.page/](https://chirpy.cotes.page/)
 
-ceshi
-
 ## 本地服务器启动
 
 bundle exec jekyll s
