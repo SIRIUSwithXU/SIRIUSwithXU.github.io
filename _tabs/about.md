@@ -10,6 +10,8 @@ order: 4
 
 详细说明在：[https://chirpy.cotes.page/](https://chirpy.cotes.page/)
 
+ceshi
+
 ## 本地服务器启动
 
 bundle exec jekyll s
@@ -34,7 +36,7 @@ git checkout -b master // 基于主分支创建新分支
 ```
 git add . // 将改动添加到暂存区，.代表全部文件
 git commit -m "添加新功能"
-git push origin master// 将本地更改推送到远程master分支。
+git push origin main// 将本地更改推送到远程master分支。
 ```
 
 其它操作：
@@ -48,8 +50,6 @@ git remote -v
 git remote：查看当前 Git 仓库关联的远程仓库名称。
 -v（verbose）：显示详细信息，包括每个远程仓库的 URL 和用途（fetch 或 push）。
 ```
-
-
 
 
 ## 文件状态说明
